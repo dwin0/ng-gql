@@ -1,0 +1,13 @@
+<h1>Last SpaceX launches</h1>
+
+<div *ngIf="loading">
+  Loading...
+</div>
+<div *ngIf="error">
+  Error :(
+</div>
+<div *ngIf="launches">
+  <div *ngFor="let launch of launches">
+    <p>Launch name: {{launch.mission_name}}</p>
+  </div>
+</div>
